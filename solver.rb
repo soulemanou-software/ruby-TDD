@@ -1,11 +1,8 @@
-# frozen_string_literal: true
-
-# Solver class implement three methods
 class Solver
   def fizzbuzz(num)
     if (num % 3).zero? && (num % 5).zero?
       'fizzbuzz'
-    elsif (num % 3).zero?
+    elsif (num % 3).zero
       'fizz'
     elsif (num % 5).zero?
       'buzz'
@@ -26,6 +23,3 @@ class Solver
     reverse(str.slice(1, str.length - 1)) + str[0]
   end
 end
-
-solver = Solver.new
-puts solver.factorial(5)
